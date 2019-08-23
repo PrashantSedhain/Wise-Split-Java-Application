@@ -1,2 +1,2 @@
 # Wise-Split-Java-Applivation
-This application allows the user to split the balances between friends and families wisely.
+This JavaFx application allows the user to split the balances between friends and families wisely.
