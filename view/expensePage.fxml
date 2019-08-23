@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ExpensePageController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="0.0" prefWidth="18.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="195.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="194.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="193.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="197.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="144.0" minHeight="0.0" prefHeight="70.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="336.0" minHeight="10.0" prefHeight="336.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="image1" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></ImageView>
+      <ImageView fx:id="image2" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></ImageView>
+      <ImageView fx:id="image3" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></ImageView>
+      <ImageView fx:id="image4" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></ImageView>
+      <CheckBox fx:id="prashantCheckbox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Included" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="biswasCheckbox" mnemonicParsing="false" text="Included" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="sumanCheckbox" mnemonicParsing="false" text="Included" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="dipeshCheckbox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Included" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <AnchorPane prefHeight="336.0" prefWidth="301.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="64.0" text="Expense Title:" />
+                  <Label layoutX="44.0" layoutY="107.0" text="Amount Paid:" />
+                  <Label layoutX="76.0" layoutY="155.0" text="Paid By:" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="expenseTitle" layoutX="-34.0" layoutY="57.0" prefHeight="39.0" prefWidth="302.0" promptText="Enter the title" />
+            <TextField fx:id="amountPaid" layoutX="-34.0" layoutY="102.0" prefHeight="39.0" prefWidth="302.0" promptText="Enter the amount" />
+            <ChoiceBox fx:id="cBox" layoutX="-34.0" layoutY="149.0" prefWidth="150.0" />
+            <Button layoutX="119.0" layoutY="149.0" mnemonicParsing="false" onAction="#addButtonClicked" text="Add" />
+            <Button layoutX="148.0" layoutY="283.0" mnemonicParsing="false" onAction="#generateResultsClicked" prefHeight="39.0" prefWidth="81.0" text="Settle" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="14.0" text="Expense Page" textFill="#007aff">
+               <font>
+                  <Font name="Leelawadee" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="homeButton" mnemonicParsing="false" onAction="#homeButtonClicked" text="Home" GridPane.columnIndex="1" />
+   </children>
+</GridPane>

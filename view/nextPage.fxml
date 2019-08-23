@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.nextPageController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="54.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="262.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="255.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="247.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="52.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="233.0" minHeight="4.0" prefHeight="83.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="396.0" minHeight="10.0" prefHeight="189.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="223.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="image1" fitHeight="187.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ImageView fx:id="image2" fitHeight="185.0" fitWidth="238.0" layoutX="10.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <ImageView fx:id="image3" fitHeight="187.0" fitWidth="230.0" layoutX="252.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <ImageView fx:id="image4" fitHeight="187.0" fitWidth="242.0" layoutX="529.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ImageView fx:id="image5" fitHeight="187.0" fitWidth="237.0" layoutX="10.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <ImageView fx:id="image6" fitHeight="187.0" fitWidth="230.0" layoutX="252.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="titleText" fill="#006b83" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="235.205078125">
+                     <font>
+                        <Font name="Felix Titling" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="87.0" prefWidth="254.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="label1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="label2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="label3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="label4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="label5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" text="Add">
+               <HBox.margin>
+                  <Insets left="85.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="label6">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+         <children>
+            <Button layoutX="169.0" layoutY="22.0" mnemonicParsing="false" onAction="#continueButtonClicked" text="Continue" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

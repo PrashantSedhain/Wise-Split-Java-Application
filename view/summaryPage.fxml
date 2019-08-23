@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SummaryPageController">
+   <center>
+      <VBox prefHeight="435.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="105.0" prefWidth="429.0" spacing="8.0">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#prashantButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #137e8f;" text="Prashant" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="138.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#biswashButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #b32034;" text="Biswash" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#sumanButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #1e7d4a;" text="Suman" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#dipeshButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #b3821b;" text="Dipesh" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tableView" prefHeight="486.0" prefWidth="808.0" style="-fx-background-color: #9cc2ff;">
+              <columns>
+                <TableColumn fx:id="title" prefWidth="173.0" text="Title" />
+                <TableColumn fx:id="amount" prefWidth="158.0" text="Amount" />
+                  <TableColumn fx:id="paidBy" prefWidth="144.0" text="Paid By" />
+                  <TableColumn fx:id="included" prefWidth="149.0" text="Included?" />
+                  <TableColumn fx:id="balance" prefWidth="169.0" text="Balance" />
+              </columns>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="435.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane prefHeight="65.0" prefWidth="798.0" style="-fx-background-color: #224987;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="281.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary Page">
+               <font>
+                  <Font name="Book Antiqua" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
